@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC"-//w3c//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtm">
+
+<head>
+    <title> Roots of a quadratic equations</title>
+</head>
+
+<body>
+    <h1>Roots of a quadratic equations</h1>
+    <script type="text/javascript">
+        var a = prompt("Enter the first number: ");
+        var b = prompt("Enter the second number: ");
+        var c = prompt("Enter the third number: ");
+
+        var root_part = Math.sqrt(b * b - 4.0 * a * c);
+        var denominator = 2.0 * a;
+
+        var root1 = (-b + root_part) / denominator;
+        var root2 = (-b - root_part) / denominator;
+
+        document.write("The first number is : " + a + "<br>");
+        document.write("The second number is : " + b + "<br>");
+        document.write("The third number is : " + c + "<br>");
+        document.write("The first root is : " + root1 + "<br>");
+        document.write("The second root is: " + root2 + "<br>");
+    </script>
+</body>
